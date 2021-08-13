@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Cash Register Manager</h1>
+
+    <div id="first">
+        <p>Enter the bill amount and the cash given by the customer and know minimum number of notes to return.</p>
+        <p>Bill Amount:</p>
+        <input type="text" name="inputBar" id="bill-amount">
+        <button id="next-button">Next</button>
+        <div id="error1"></div>
+    </div>
+
+    <div id="second">
+        <p>Cash Given:</p>
+        <input type="text" id="cash-given">
+        <button id="check-button">Check</button>
+        <div id="error2"></div>
+    </div>
+
+    <div id="third">
+        <p>Return Change:</p>
+        <table>
+            <tr>
+                <th>No. of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
