@@ -1,16 +1,39 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+body{
     display: block;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    /* margin: 5rem; */
+    /* width: 750px; */
+    font-size: larger;
+    background-image: url(images/money-bg.jpg);
 }
+
+.heading{
+    color: #EA580C;
+    font-weight: bold;
+}
+
+.subheading{
+    color: black;
+    font-weight: bold;
+}
+
 table{
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
+    padding: 1.5rem;
+    /* margin-bottom: 1rem; */
 }
 th, td{
     padding: 10px;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid #EA580C;
+    color: black;
+    font-weight: bold;    
 }
 td{
     padding: 5px 15px;
@@ -19,4 +42,61 @@ td{
 
 #second, #third{
     display: none;
+}
+
+.whole{
+    background-color: #C4B5FD;
+    margin: 0rem 5rem 1rem 5rem;
+    opacity: 0.9;
+    box-shadow: 10px 10px 10px grey;
+    border: 2px solid black;
+    border-radius: 0.7rem;
+}
+
+input{
+    border-radius: 0.3rem;
+    margin-bottom: 0rem;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100px;
+}
+
+button{
+    border-radius: 0.3rem;
+    margin-top: 5px;
+    border: 1px solid #4C1D95;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+}
+
+
+.link-social{
+    padding: 0.5rem;
+}
+
+.link-social:hover{
+    filter: invert(20%);
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 1rem 1rem;
+}
+
+.list-links {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.social-links{
+    margin-left: 0px;
+    padding-left: 0px;
 }
