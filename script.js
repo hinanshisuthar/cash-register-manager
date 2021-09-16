@@ -24,17 +24,18 @@ function nextClickEventHandler(){ //100
 checkButton.addEventListener("click", CheckClickEventHandler);
 
 function CheckClickEventHandler(){ //cash given = 110
-    if(parseInt(billAmount.value)<=parseInt(cashGiven.value)){ //proceed only if the bill amount < cash given
-        // if(billAmount.value===cashGiven.value){
-        //     document.getElementById("error2").innerText="No change is to be given.";
-        // }
+    if(parseInt(billAmount.value)<parseInt(cashGiven.value)){ //proceed only if the bill amount < cash given
         document.getElementById("third").style.display="block";
         document.getElementById("error2").style.display="none";
 
         const amountToBeReturned = cashGiven.value - billAmount.value; // 110 - 100 = 10(amount to be returned)
         calculateChange(amountToBeReturned); //calculatechange (10)
     }
+    else if(billAmount.value===cashGiven.value){
+        document.getElementById("error2").innerText="No change is to be given.";
+    } else {
     document.getElementById("error2").innerText="Enter valid bill amount and cash given to calculate";
+    }
 }
 
 function calculateChange(amountToBeReturned){ 
