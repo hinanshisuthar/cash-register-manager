@@ -24,6 +24,7 @@ function nextClickEventHandler(){ //100
 checkButton.addEventListener("click", CheckClickEventHandler);
 
 function CheckClickEventHandler(){ //cash given = 110
+    if(parseInt(billAmount.value) > 0 && parseInt(cashGiven.value) > 0){
     if(parseInt(billAmount.value)<parseInt(cashGiven.value)){ //proceed only if the bill amount < cash given
         document.getElementById("third").style.display="block";
         document.getElementById("error2").style.display="none";
@@ -36,6 +37,10 @@ function CheckClickEventHandler(){ //cash given = 110
     } else {
     document.getElementById("error2").innerText="Enter valid bill amount and cash given to calculate";
     }
+}
+else {
+    alert("please enter valid values")
+}
 }
 
 function calculateChange(amountToBeReturned){ 
