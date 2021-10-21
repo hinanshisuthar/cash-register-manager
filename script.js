@@ -43,10 +43,10 @@ else {
 }
 }
 
-function calculateChange(amountToBeReturned){ 
+function calculateChange(amountToBeReturned){ //10
     for(let i = 0;i<availableNotes.length; i++){ // availableNotes.length = 7
         const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]); // = 10/2000 = 0
         amountToBeReturned %=  availableNotes[i]; //= 10%2000 =  0
         noOfNotes[i].innerText = numberOfNotes; // 0 2000 notes to be returned 
-    } //loop will continue 7 times 
+    } //loop will continue 7 times for different denominations 
 } 
